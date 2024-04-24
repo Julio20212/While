@@ -1,0 +1,23 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class AtivWhile2 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int numero, soma = 0, i=0;
+		double media; 
+		
+		while (i < 5) {
+            System.out.print("Informe o número " + (i + 1) + ": ");
+            numero = ler.nextInt();
+            soma += numero;
+            i++;
+        }
+        media = soma/ 5;
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Média: " + media);
+    }
+}
