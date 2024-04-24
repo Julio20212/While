@@ -1,0 +1,22 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class AtivWhile1 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int fim, i= 1;
+		
+        System.out.println("Digite o valor final do intervalo:");
+        fim = ler.nextInt();
+        System.out.println("Os números ímpares até " + fim + "são: ");
+        while (i <= fim) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+                i++;
+            }
+        }
+    }
+
